@@ -1,6 +1,6 @@
 async function fetchTemperature() {
     try {
-        let response = await fetch('192.168.43.140/sensorData');
+        let response = await fetch('192.168.43.233/sensorData');
         if (response.ok) {
             let data = await response.json();
             document.getElementById('temperature-display').innerText = `Temperature: ${data.temperature} °C`;
